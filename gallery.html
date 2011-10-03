@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.baregallery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+$('#gallery').baregallery({ // set up gallery options
+	'speed'				: 500,
+	'cycleTime'	:	5000,
+	'imageNextPrev' : true,
+	'onHoverStop' : false,
+	'pagerType' : '#pager',
+	'captionType' : '.overlay-box-inner',
+	'transitionType' : 'fade',
+	'fullScreen' : false
+});
+	});
+</script>
+
+<style media="all" type="text/css">
+body {
+	margin:0;
+}
+#pager .dot {
+	border:solid 1px #000;
+	display: inline-block;
+	width:20px;
+	height:20px;
+	cursor: pointer;
+	margin:10px;
+}
+#pager .active {
+	background: #000;
+}
+</style>
+</head>
+
+<body>
+<div id="gallery">
+	<a href="http://www.ianhoar.com"><img src="IMG_4507.JPG" alt="IMG_4507" width="1600" height="1200" /></a>
+	<a href="http://www.imhmedia.net"><img src="IMG_4609.JPG" alt="IMG_4609" width="1600" height="1200" /></a>
+	<a href="http://www.thezombiejournal.com"><img src="IMG_4667.JPG" alt="IMG_4667" width="1600" height="1200" /></a>
+	<a href="http://www.google.com"><img src="IMG_4672.JPG" alt="IMG_4672" width="1600" height="1200" /></a>
+	<a href="http://www.yahoo.com"><img src="IMG_5309.JPG" alt="IMG_5309" width="1600" height="1200" /></a>
+	<a href="http://www.windandsail.com"><img src="IMG_5336.JPG" alt="IMG_5336" width="1600" height="1200" /></a>
+</div>
+
+<div id="caption" class="overlay-box">
+	<div class="overlay-box-inner">
+		<p>Caption 1</p>
+	</div>
+	<div class="overlay-box-inner">
+		<p>Caption 2</p>
+	</div>
+	<div class="overlay-box-inner">
+		<p>Caption 3</p>
+	</div>
+	<div class="overlay-box-inner">
+		<p>Caption 4</p>
+	</div>
+	<div class="overlay-box-inner">
+		<p>Caption 5</p>
+	</div>
+	<div class="overlay-box-inner">
+		<p>Caption 6</p>
+	</div>
+</div>
+
+<div style="padding-top:50px;"></div>
+<div id="pager"></div>
+
+
+</body>
+</html>
